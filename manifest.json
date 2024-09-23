@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Kascade Task Linker",
+  "version": "1.0",
+  "description": "A web extension to automatically insert links in commits title / description and PR title in github website, with regex matching, to an external website.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "webNavigation"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "GitHub Kascade Task Linker"
+    }
+  },
+  "action": {
+    "default_title": "Configuration",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*/*/commits/*",
+        "https://github.com/*/*/commit/*",
+        "https://github.com/*/*/pull/*",
+        "https://github.com/*/*/pulls"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_end",
+      "world": "ISOLATED"
+    }
+  ]
+}
