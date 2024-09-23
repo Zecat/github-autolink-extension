@@ -1,0 +1,29 @@
+{
+  "name": "github-autolink-extension",
+  "version": "1.0.0",
+  "description": "A web extension to automatically insert links in commits title / description and PR title in github website, with regex matching, to an external website.",
+  "scripts": {
+    "build": "node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zecat/github-autolink-extension.git"
+  },
+  "keywords": [
+    "webextension",
+    "github",
+    "autolink",
+    "reference",
+    "taskmanager"
+  ],
+  "author": "jullienfelix@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zecat/github-autolink-extension/issues"
+  },
+  "homepage": "https://github.com/Zecat/github-autolink-extension#readme",
+  "devDependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}
