@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Autolink Configuration</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    body {
+      width: 500px;
+    }
+
+    #title {
+      margin: 0;
+      background: purple;
+      color: white;
+      padding: 24px;
+    }
+
+    #form {
+      padding: 24px 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <h5 id="title">GitHub Autolink Configuration</h5>
+  <div class="row" id="form">
+    <div class="input-field col s12">
+      <input value="" id="referenceRegex" type="text" class="validate" title="The regex matching your reference in commit title/description and PR title.">
+      <label for="referenceRegex">Reference Regex</label>
+    </div>
+    <div class="input-field col s12">
+      <input id="taskManagerUrlPattern" type="text" class="validate">
+      <label for="taskManagerUrlPattern">Task manager URL pattern</label>
+    </div>
+    <div class="col s12">
+    <div id="chips" ></div>
+</div>
+  </div>
+  </body>
+  <script src="materialize.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>

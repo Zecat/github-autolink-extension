@@ -8,19 +8,12 @@
     "storage",
     "webNavigation"
   ],
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "jullienfelix@gmail.com"
-    }
-  },
   "action": {
     "default_title": "Configuration",
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": [
-      "background.js"
-    ]
+      "service_worker": "background.js"
   },
   "content_scripts": [
     {
