@@ -82,9 +82,9 @@ const linkInsertionForUrl = async url => {
       handleCommitListPage();
     else if (url.includes("/commits"))
       handlePRCommitListPage();
-    else if (url.includes("/pulls"))
+  } 
+  else if (url.includes("/pulls"))
       handlePRListPage();
-  }
   else if (url.includes("/commit/"))
     handleSingleCommitPage();
   else if (url.includes("/commits/"))
